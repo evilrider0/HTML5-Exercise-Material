@@ -1,0 +1,10 @@
+body{
+  background: tomato;
+}
+h1,p{
+  color: white;
+}
+
+p{
+  font-family: Arial;
+}
