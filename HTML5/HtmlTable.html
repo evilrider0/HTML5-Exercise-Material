@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>HTML Table</title>
+    <style>
+    body{
+      font-family: roboto;
+      font-size: 16px;
+    }
+      .row{
+        width:100%;
+        padding: 15px;
+        display: block;
+      }
+      .co-6{
+        width:45%;
+        float: left;
+        padding: 20px;
+
+      }
+
+    table, th, td{
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+   th, td{
+     padding: 10px;
+   }
+
+   td{
+     text-align: center;
+   }
+
+   table#table_one{
+     background: #eee;
+   }
+
+   table#table_one th{
+     background: white;
+   }
+
+   table#table_one tr:nth-child(even){
+     background: #eee;
+   }
+   table#table_one tr:nth-child(odd){
+     background: #fff;
+   }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="co-6">
+
+        <table style="width:100%">
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>James</td>
+            <td>Dellas</td>
+            <td>47</td>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td>Due</td>
+            <td>25</td>
+          </tr>
+        </table>
+
+
+
+      </div>
+      <div class="co-6">
+
+        <table style="width:100%">
+          <tr>
+            <th>First Name</th>
+            <th >Last Name</th>
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>James</td>
+            <td colspan="2">Dellas</td>
+            <!-- <td>47</td> -->
+          </tr>
+          <tr>
+            <td>John</td>
+            <td>Due</td>
+            <td>25</td>
+          </tr>
+        </table>
+
+      </div>
+
+      <div class="co-6">
+
+        <table style="width:100%">
+          <tr>
+            <th>First Name</th>
+            <th >cost</th>
+            <th>Total cost</th>
+          </tr>
+          <tr>
+            <td>James</td>
+            <td >50</td>
+            <td rowspan="2">80</td>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td>30</td>
+            <!-- <td>25</td> -->
+          </tr>
+        </table>
+
+      </div>
+
+      <div class="co-6">
+
+        <table style="width:100%" id="table_one">
+          <caption>Table One</caption>
+          <tr>
+            <th>First Name</th>
+            <th >Last Name</th>
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>James</td>
+            <td>Dellas</td>
+            <td>47</td>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td>Due</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>James</td>
+            <td>Dellas</td>
+            <td>47</td>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td>Due</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>James</td>
+            <td>Dellas</td>
+            <td>47</td>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td>Due</td>
+            <td>25</td>
+          </tr>
+        </table>
+
+      </div>
+    </div>
+  </body>
+</html>
